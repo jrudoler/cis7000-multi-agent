@@ -26,12 +26,12 @@ def concat_item_metadata(dp):
     return dp
 
 
-def clean_review(review: Dict[str, List]) -> List[bool]:
-    return [r != "" for r in review["text"]]
+# def clean_review(review: Dict[str, List]) -> List[bool]:
+#     return [r != "" for r in review["text"]]
 
 
-def clean_meta(meta: Dict[str, List]) -> List[bool]:
-    return [m != "" for m in meta["description"]]
+# def clean_meta(meta: Dict[str, List]) -> List[bool]:
+#     return [m != "" for m in meta["description"]]
 
 
 def load_data(
@@ -53,7 +53,7 @@ def load_data(
         trust_remote_code=True,
     )
     item_meta = item_meta["full"]
-
+    item_meta = item_meta.map(concat_item_metadata, num_proc=N_CPUS)
     ## get most useful reviews
     if review_filter is not None:
         reviews = reviews.filter(review_filter, batched=True, num_proc=N_CPUS)
@@ -79,10 +79,11 @@ def load_data(
     for row in item_meta_filtered:
         all_meta[row["parent_asin"]] = row
 
-    # # merge reviews and meta
-    # reviews =
+    reviews = reviews.add_column(
+        "item_description", [all_meta[review["parent_asin"]]["cleaned_metadata"] for review in reviews]
+    )
 
-    return reviews, all_meta
+    return reviews
 
 
 def sample_reviews(reviews: Dataset, n: int = 3):

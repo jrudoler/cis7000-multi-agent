@@ -1,6 +1,6 @@
 from openai import AzureOpenAI
 import os
-from data_handling import load_data, clean_review, clean_meta
+from data_handling import load_data, sample_reviews
 
 # Set up the OpenAI API client
 
@@ -14,23 +14,45 @@ def get_client():
     return client
 
 
-def main():
-    dataset = load_data()
-    dataset = load_data(review_filter=clean_review, meta_filter=clean_meta)
+def example_prompts(reviews):
+    """
+    Generate a list of few-shot prompts based on the reviews.
+    Assumes that the reviews have already been cleaned and have an 'item_description' column.
+    """
+    prompts = []
+    for review in reviews:
+        prompts.extend(
+            [
+                {"role": "user", "content": f"Item Description: {review['item_description']}"},
+                {"role": "assistant", "content": f"Title: {review['title']}\nReview: {review['text']}"},
+            ]
+        )
+    return prompts
+
+
+def main(client, n_few_shot: int = 3, seed: int | None = None):
+    reviews = load_data()
     # sample 3 reviews
-    selected_reviews = reviews.shuffle(seed=42).take(3)
-    selected_meta = [
-        concat_item_metadata(all_meta[_])["cleaned_metadata"]
-        for _ in selected_reviews.select_columns(["parent_asin"]).to_dict()["parent_asin"]
-    ]
-    selected_reviews = selected_reviews.add_column("item_description", selected_meta)
+
+    system_prompt = {
+        "role": "system",
+        "content": "You are a helpful assistant that can review books based on the item metadata.",
+    }
+    examples = reviews.shuffle(seed=seed).take(n_few_shot + 1)
+    user_prompt = {"role": "user", "content": examples.select([n_few_shot])["item_description"][0]}
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            system_prompt,
+            *example_prompts(examples.select(range(n_few_shot))),
+            user_prompt,
+        ],
+    )
+    print(f"Given item description:\n{'-' * 100}\n{user_prompt['content']}\n{'-' * 100}\n")
+    print(f"Response:\n{'-' * 100}\n{response.choices[0].message.content}\n{'-' * 100}\n")
 
 
 if __name__ == "__main__":
     client = get_client()
 
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": "Hello, how can I use Azure OpenAI?"}],
-    )
-    print(print(response.choices[0].message.content))
+    main(client)
