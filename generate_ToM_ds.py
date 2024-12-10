@@ -3,6 +3,9 @@ import pandas as pd
 import dask.dataframe as dd
 from dask import delayed, compute
 
+# Set the seed for reproducibility
+np.random.seed(42)
+
 
 # try:
 #     # Load file if exists
@@ -24,7 +27,7 @@ n_test_samples = 30
 
 
 @delayed
-def process_sample(sample, few_shot, agents):
+def process_sample(sample, few_shot, agents) -> list[dict]:
     sample_premise = sample["premise"]
     sample_hypothesis = sample["hypothesis"]
     sample_label = sample["label"]

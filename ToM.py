@@ -1,24 +1,31 @@
 import pandas as pd
 import numpy as np
 import openai_utils as oai
+from joblib import Parallel, delayed
 
 
 def get_dataset(split="train"):
     splits = {
-        "test": "plain_text/test-00000-of-00001.parquet",
-        "validation": "plain_text/validation-00000-of-00001.parquet",
-        "train": "plain_text/train-00000-of-00001.parquet",
+        "test": "test-00000-of-00001.parquet",
+        "validation": "validation-00000-of-00001.parquet",
+        "train": "train-00000-of-00001.parquet",
     }
-    df = pd.read_parquet("hf://datasets/stanfordnlp/snli/" + splits[split])
+    df = pd.read_parquet("hf://datasets/stanfordnlp/snli/plain_text/" + splits[split])
 
     return df
 
 
 def get_m_few_shots_text(m_examples):
+    """
+    Get m few shot examples, sampled randomly from the train set
+    """
     df_train = get_dataset("train")
 
     # Get m random examples
     df = df_train.sample(m_examples)
+
+    # track the indices of the examples
+    indices = df.index.tolist()
 
     text = ""
 
@@ -27,16 +34,23 @@ def get_m_few_shots_text(m_examples):
         text += f"Hypothesis: {row['hypothesis']}\n"
         text += f"Label: {row['label']}\n\n"
 
-    return text
+    return text, indices
 
 
 def get_n_new_premises(n_new, df_processed):
+    """
+    Get n new premises from the test set that have not been processed yet
+    """
     df = get_dataset("test")
     df = df[~df["premise"].isin(df_processed["premise"])]
     return df.sample(n=n_new)
 
 
-def get_premise_individual_class(hypothesis, premise, label, m_examples):
+def classify_hypothesis_single_agent(hypothesis, premise, label, m_examples):
+    """
+    Classify the hypothesis using a single agent
+    """
+
     sys_prompt = """
     Premise and hypothesis classification task
 
@@ -50,8 +64,9 @@ def get_premise_individual_class(hypothesis, premise, label, m_examples):
     2. Here you have a few examples to guide your classification:
 
     """
-
-    sys_prompt += get_m_few_shots_text(m_examples)
+    ## Get the examples and their indices
+    examples, indices = get_m_few_shots_text(m_examples)
+    sys_prompt += examples
 
     sys_prompt += """
     3. For the given hypothesis and premise, your answer should be a number between 0 and 2. 
@@ -79,19 +94,21 @@ def get_premise_individual_class(hypothesis, premise, label, m_examples):
 
 
 def vote_mean(votes):
+    # rounding votes to get the 0, 1 or 2 classification
     return np.mean(votes).round(0)
 
 
-def get_premise_class(premise, hypothesis, label, n_agents, m_examples):
+def classify_hypothesis_n_agents(premise, hypothesis, label, n_agents, m_examples, vote_func=vote_mean):
+    """
+    Classify the hypothesis using n agents, using the vote function to aggregate the votes
+    """
     votes = []
 
-    for i in range(0, n_agents):
-        response, result = get_premise_individual_class(premise, hypothesis, label, m_examples)
-        response = int(response)
-        votes.append(response)
+    votes = Parallel(n_jobs=n_agents, return_as="list")(
+        delayed(classify_hypothesis_single_agent)(premise, hypothesis, label, m_examples) for _ in range(n_agents)
+    )
 
-    # rounding votes to get the 0, 1 or 2 classification
-    y_predicted = vote_mean(votes)
+    y_predicted = vote_func(votes)
 
     # Get 1 correct or 0 incorrect
     result = int(y_predicted == label)
