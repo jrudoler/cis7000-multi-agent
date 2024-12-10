@@ -81,36 +81,36 @@ def classify_hypothesis_single_agent(hypothesis, premise, label, m_examples):
         prompt_sys=sys_prompt,
         prompt_user=testing_rel,
         model="gpt-4o-mini",
-        temp=0.7,
+        temp=0.1,  # changed from 0.7 to 0.1, we probably want the effect of few-shot to be more pronounced
     )
 
     # Round response
     response = int(response)
 
-    # Get real classification
-    result = int(response == label)
-
-    return response, result
+    return response
 
 
 def vote_mean(votes):
     # rounding votes to get the 0, 1 or 2 classification
-    return np.mean(votes).round(0)
+    return int(np.mean(votes).round(0))
 
 
-def classify_hypothesis_n_agents(premise, hypothesis, label, n_agents, m_examples, vote_func=vote_mean):
+def vote_majority(votes):
+    return int(np.argmax(np.bincount(votes)))
+
+
+def classify_hypothesis_n_agents(
+    premise, hypothesis, label, n_agents, m_examples, vote_funcs=[vote_mean, vote_majority]
+):
     """
-    Classify the hypothesis using n agents, using the vote function to aggregate the votes
+    Classify the hypothesis using n agents, using the vote functions to aggregate the votes
     """
-    votes = []
-
     votes = Parallel(n_jobs=n_agents, return_as="list")(
         delayed(classify_hypothesis_single_agent)(premise, hypothesis, label, m_examples) for _ in range(n_agents)
     )
+    print(votes)
+    results = {}
+    for vote_func in vote_funcs:
+        results[vote_func.__name__] = vote_func(votes)
 
-    y_predicted = vote_func(votes)
-
-    # Get 1 correct or 0 incorrect
-    result = int(y_predicted == label)
-
-    return y_predicted, result
+    return results

@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
+# from mpl_toolkits.mplot3d import Axes3D
 
 # Load the Excel file
 file_path = "data/results_ToM.csv"
@@ -14,9 +14,11 @@ except FileNotFoundError:
     raise
 
 # Ensure the necessary columns exist in the DataFrame
-required_columns = ["n_agents", "m_examples", "result", "premise"]
-if not all(col in df.columns for col in required_columns):
-    raise ValueError(f"The DataFrame must contain the following columns: {required_columns}")
+# required_columns = ["n_agents", "m_examples", "result", "premise"]
+# if not all(col in df.columns for col in required_columns):
+#     raise ValueError(f"The DataFrame must contain the following columns: {required_columns}")
+
+df["result"] = df["vote_mean"] == df["label"]
 
 # Group by n_agents and m_examples and calculate mean performance and standard error
 pivot_df = (
@@ -81,6 +83,9 @@ ax.set_zlabel("Performance")
 
 # Add a centered title with the number of distinct IDs
 plt.title(f"Premise-Hypothesis Classification Examples-Agents (n = {distinct_ids})", loc="center", fontsize=14)
+
+print(pivot_df.head())
+print(fig)
 
 # Show plot
 plt.show()
