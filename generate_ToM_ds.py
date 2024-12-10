@@ -13,11 +13,11 @@ from dask import delayed, compute
 df_results = pd.DataFrame(columns=["premise", "hypothesis", "label", "predicted", "result"])
 
 # Config
-few_shot = [1, 4, 8, 16, 32]
-agents = [1, 3, 5, 9]
+few_shot = [1, 4, 8]  # [1, 4, 8, 16, 32]
+agents = [1, 3, 5]  # [1, 3, 5, 9]
 
 # The batch size of new samples
-n_test_samples = 10
+n_test_samples = 30
 
 # Add new results
 # new_samples = ToM.get_n_new_premises(new_n_samples, df_results)
@@ -49,6 +49,7 @@ def process_sample(sample, few_shot, agents):
 
 
 test_samples = get_dataset(split="test")
+test_samples = test_samples.sample(n_test_samples)
 dask_df = dd.from_pandas(test_samples, npartitions=4)  # Adjust the number of partitions as needed
 
 delayed_results = [process_sample(row, few_shot, agents) for _, row in dask_df.iterrows()]
@@ -58,7 +59,13 @@ results = compute(*delayed_results)
 all_results = [item for sublist in results for item in sublist]
 df_results = pd.concat([df_results, pd.DataFrame(all_results)], ignore_index=True)
 
-# Save results
-df_results.to_csv("data/results_ToM.csv", index=False)
-
-print("Results saved!")
+# Debugging: Check if df_results is empty
+if df_results.empty:
+    print("Warning: df_results is empty. No data to save.")
+else:
+    # Save results with error handling
+    try:
+        df_results.to_csv("data/results_ToM.csv", index=False)
+        print("Results saved!")
+    except Exception as e:
+        print(f"Error saving results: {e}")

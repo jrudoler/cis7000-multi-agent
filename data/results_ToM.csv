@@ -1,0 +1,271 @@
+premise,hypothesis,label,predicted,result,n_agents,m_examples
+A person in a red shirt and black pants hunched over.,A person wears a red shirt.,0,0.0,1,1.0,1.0
+A person in a red shirt and black pants hunched over.,A person wears a red shirt.,0,0.0,1,3.0,1.0
+A person in a red shirt and black pants hunched over.,A person wears a red shirt.,0,0.0,1,5.0,1.0
+A person in a red shirt and black pants hunched over.,A person wears a red shirt.,0,0.0,1,1.0,4.0
+A person in a red shirt and black pants hunched over.,A person wears a red shirt.,0,0.0,1,3.0,4.0
+A person in a red shirt and black pants hunched over.,A person wears a red shirt.,0,0.0,1,5.0,4.0
+A person in a red shirt and black pants hunched over.,A person wears a red shirt.,0,0.0,1,1.0,8.0
+A person in a red shirt and black pants hunched over.,A person wears a red shirt.,0,0.0,1,3.0,8.0
+A person in a red shirt and black pants hunched over.,A person wears a red shirt.,0,0.0,1,5.0,8.0
+A man is playing the saxophone in the street and some people are sitting on the curb next to the street by him.,A man is playing an instrument on the street near other people.,0,0.0,1,1.0,1.0
+A man is playing the saxophone in the street and some people are sitting on the curb next to the street by him.,A man is playing an instrument on the street near other people.,0,0.0,1,3.0,1.0
+A man is playing the saxophone in the street and some people are sitting on the curb next to the street by him.,A man is playing an instrument on the street near other people.,0,0.0,1,5.0,1.0
+A man is playing the saxophone in the street and some people are sitting on the curb next to the street by him.,A man is playing an instrument on the street near other people.,0,0.0,1,1.0,4.0
+A man is playing the saxophone in the street and some people are sitting on the curb next to the street by him.,A man is playing an instrument on the street near other people.,0,0.0,1,3.0,4.0
+A man is playing the saxophone in the street and some people are sitting on the curb next to the street by him.,A man is playing an instrument on the street near other people.,0,0.0,1,5.0,4.0
+A man is playing the saxophone in the street and some people are sitting on the curb next to the street by him.,A man is playing an instrument on the street near other people.,0,0.0,1,1.0,8.0
+A man is playing the saxophone in the street and some people are sitting on the curb next to the street by him.,A man is playing an instrument on the street near other people.,0,0.0,1,3.0,8.0
+A man is playing the saxophone in the street and some people are sitting on the curb next to the street by him.,A man is playing an instrument on the street near other people.,0,0.0,1,5.0,8.0
+Some dogs are running on a deserted beach.,There are multiple dogs present.,0,0.0,1,1.0,1.0
+Some dogs are running on a deserted beach.,There are multiple dogs present.,0,0.0,1,3.0,1.0
+Some dogs are running on a deserted beach.,There are multiple dogs present.,0,0.0,1,5.0,1.0
+Some dogs are running on a deserted beach.,There are multiple dogs present.,0,0.0,1,1.0,4.0
+Some dogs are running on a deserted beach.,There are multiple dogs present.,0,0.0,1,3.0,4.0
+Some dogs are running on a deserted beach.,There are multiple dogs present.,0,0.0,1,5.0,4.0
+Some dogs are running on a deserted beach.,There are multiple dogs present.,0,0.0,1,1.0,8.0
+Some dogs are running on a deserted beach.,There are multiple dogs present.,0,0.0,1,3.0,8.0
+Some dogs are running on a deserted beach.,There are multiple dogs present.,0,0.0,1,5.0,8.0
+A man holding a baby who is petting a pony.,A man and his daughter are petting a pony.,1,1.0,1,1.0,1.0
+A man holding a baby who is petting a pony.,A man and his daughter are petting a pony.,1,1.0,1,3.0,1.0
+A man holding a baby who is petting a pony.,A man and his daughter are petting a pony.,1,1.0,1,5.0,1.0
+A man holding a baby who is petting a pony.,A man and his daughter are petting a pony.,1,1.0,1,1.0,4.0
+A man holding a baby who is petting a pony.,A man and his daughter are petting a pony.,1,1.0,1,3.0,4.0
+A man holding a baby who is petting a pony.,A man and his daughter are petting a pony.,1,1.0,1,5.0,4.0
+A man holding a baby who is petting a pony.,A man and his daughter are petting a pony.,1,1.0,1,1.0,8.0
+A man holding a baby who is petting a pony.,A man and his daughter are petting a pony.,1,1.0,1,3.0,8.0
+A man holding a baby who is petting a pony.,A man and his daughter are petting a pony.,1,1.0,1,5.0,8.0
+The boys are playing with Legos.,Boys are playing chess.,2,2.0,1,1.0,1.0
+The boys are playing with Legos.,Boys are playing chess.,2,2.0,1,3.0,1.0
+The boys are playing with Legos.,Boys are playing chess.,2,2.0,1,5.0,1.0
+The boys are playing with Legos.,Boys are playing chess.,2,2.0,1,1.0,4.0
+The boys are playing with Legos.,Boys are playing chess.,2,2.0,1,3.0,4.0
+The boys are playing with Legos.,Boys are playing chess.,2,2.0,1,5.0,4.0
+The boys are playing with Legos.,Boys are playing chess.,2,2.0,1,1.0,8.0
+The boys are playing with Legos.,Boys are playing chess.,2,2.0,1,3.0,8.0
+The boys are playing with Legos.,Boys are playing chess.,2,2.0,1,5.0,8.0
+a candid photo of a young lady sitting at a restaurant table.,A young woman is smiling and looking away from the camera.,1,1.0,1,1.0,1.0
+a candid photo of a young lady sitting at a restaurant table.,A young woman is smiling and looking away from the camera.,1,1.0,1,3.0,1.0
+a candid photo of a young lady sitting at a restaurant table.,A young woman is smiling and looking away from the camera.,1,1.0,1,5.0,1.0
+a candid photo of a young lady sitting at a restaurant table.,A young woman is smiling and looking away from the camera.,1,1.0,1,1.0,4.0
+a candid photo of a young lady sitting at a restaurant table.,A young woman is smiling and looking away from the camera.,1,1.0,1,3.0,4.0
+a candid photo of a young lady sitting at a restaurant table.,A young woman is smiling and looking away from the camera.,1,1.0,1,5.0,4.0
+a candid photo of a young lady sitting at a restaurant table.,A young woman is smiling and looking away from the camera.,1,1.0,1,1.0,8.0
+a candid photo of a young lady sitting at a restaurant table.,A young woman is smiling and looking away from the camera.,1,1.0,1,3.0,8.0
+a candid photo of a young lady sitting at a restaurant table.,A young woman is smiling and looking away from the camera.,1,1.0,1,5.0,8.0
+Three young men are playing soccer in the beach wearing shorts and beach attire while some people watch,Three young giraffes are playing soccer in the beach wearing shorts,2,2.0,1,1.0,1.0
+Three young men are playing soccer in the beach wearing shorts and beach attire while some people watch,Three young giraffes are playing soccer in the beach wearing shorts,2,2.0,1,3.0,1.0
+Three young men are playing soccer in the beach wearing shorts and beach attire while some people watch,Three young giraffes are playing soccer in the beach wearing shorts,2,2.0,1,5.0,1.0
+Three young men are playing soccer in the beach wearing shorts and beach attire while some people watch,Three young giraffes are playing soccer in the beach wearing shorts,2,2.0,1,1.0,4.0
+Three young men are playing soccer in the beach wearing shorts and beach attire while some people watch,Three young giraffes are playing soccer in the beach wearing shorts,2,2.0,1,3.0,4.0
+Three young men are playing soccer in the beach wearing shorts and beach attire while some people watch,Three young giraffes are playing soccer in the beach wearing shorts,2,2.0,1,5.0,4.0
+Three young men are playing soccer in the beach wearing shorts and beach attire while some people watch,Three young giraffes are playing soccer in the beach wearing shorts,2,2.0,1,1.0,8.0
+Three young men are playing soccer in the beach wearing shorts and beach attire while some people watch,Three young giraffes are playing soccer in the beach wearing shorts,2,2.0,1,3.0,8.0
+Three young men are playing soccer in the beach wearing shorts and beach attire while some people watch,Three young giraffes are playing soccer in the beach wearing shorts,2,2.0,1,5.0,8.0
+A concert with a blue shirted boy in the front and light shining in the back,The moment has it's fan,2,1.0,0,1.0,1.0
+A concert with a blue shirted boy in the front and light shining in the back,The moment has it's fan,2,1.0,0,3.0,1.0
+A concert with a blue shirted boy in the front and light shining in the back,The moment has it's fan,2,1.0,0,5.0,1.0
+A concert with a blue shirted boy in the front and light shining in the back,The moment has it's fan,2,1.0,0,1.0,4.0
+A concert with a blue shirted boy in the front and light shining in the back,The moment has it's fan,2,1.0,0,3.0,4.0
+A concert with a blue shirted boy in the front and light shining in the back,The moment has it's fan,2,1.0,0,5.0,4.0
+A concert with a blue shirted boy in the front and light shining in the back,The moment has it's fan,2,1.0,0,1.0,8.0
+A concert with a blue shirted boy in the front and light shining in the back,The moment has it's fan,2,1.0,0,3.0,8.0
+A concert with a blue shirted boy in the front and light shining in the back,The moment has it's fan,2,1.0,0,5.0,8.0
+A woman with a blue hat and blue and red jacket setting up a camera on a tripod.,A woman is setting up a camera on a tripod,0,0.0,1,1.0,1.0
+A woman with a blue hat and blue and red jacket setting up a camera on a tripod.,A woman is setting up a camera on a tripod,0,0.0,1,3.0,1.0
+A woman with a blue hat and blue and red jacket setting up a camera on a tripod.,A woman is setting up a camera on a tripod,0,0.0,1,5.0,1.0
+A woman with a blue hat and blue and red jacket setting up a camera on a tripod.,A woman is setting up a camera on a tripod,0,0.0,1,1.0,4.0
+A woman with a blue hat and blue and red jacket setting up a camera on a tripod.,A woman is setting up a camera on a tripod,0,0.0,1,3.0,4.0
+A woman with a blue hat and blue and red jacket setting up a camera on a tripod.,A woman is setting up a camera on a tripod,0,0.0,1,5.0,4.0
+A woman with a blue hat and blue and red jacket setting up a camera on a tripod.,A woman is setting up a camera on a tripod,0,0.0,1,1.0,8.0
+A woman with a blue hat and blue and red jacket setting up a camera on a tripod.,A woman is setting up a camera on a tripod,0,0.0,1,3.0,8.0
+A woman with a blue hat and blue and red jacket setting up a camera on a tripod.,A woman is setting up a camera on a tripod,0,0.0,1,5.0,8.0
+The bears are facing each other with their mouths wide open.,Two bears are facing each other in the woods with their mouths open.,1,0.0,0,1.0,1.0
+The bears are facing each other with their mouths wide open.,Two bears are facing each other in the woods with their mouths open.,1,0.0,0,3.0,1.0
+The bears are facing each other with their mouths wide open.,Two bears are facing each other in the woods with their mouths open.,1,0.0,0,5.0,1.0
+The bears are facing each other with their mouths wide open.,Two bears are facing each other in the woods with their mouths open.,1,0.0,0,1.0,4.0
+The bears are facing each other with their mouths wide open.,Two bears are facing each other in the woods with their mouths open.,1,0.0,0,3.0,4.0
+The bears are facing each other with their mouths wide open.,Two bears are facing each other in the woods with their mouths open.,1,0.0,0,5.0,4.0
+The bears are facing each other with their mouths wide open.,Two bears are facing each other in the woods with their mouths open.,1,0.0,0,1.0,8.0
+The bears are facing each other with their mouths wide open.,Two bears are facing each other in the woods with their mouths open.,1,0.0,0,3.0,8.0
+The bears are facing each other with their mouths wide open.,Two bears are facing each other in the woods with their mouths open.,1,0.0,0,5.0,8.0
+A student in a green shirt is writing in a notebook.,A person at the movies,2,2.0,1,1.0,1.0
+A student in a green shirt is writing in a notebook.,A person at the movies,2,2.0,1,3.0,1.0
+A student in a green shirt is writing in a notebook.,A person at the movies,2,2.0,1,5.0,1.0
+A student in a green shirt is writing in a notebook.,A person at the movies,2,2.0,1,1.0,4.0
+A student in a green shirt is writing in a notebook.,A person at the movies,2,2.0,1,3.0,4.0
+A student in a green shirt is writing in a notebook.,A person at the movies,2,2.0,1,5.0,4.0
+A student in a green shirt is writing in a notebook.,A person at the movies,2,2.0,1,1.0,8.0
+A student in a green shirt is writing in a notebook.,A person at the movies,2,2.0,1,3.0,8.0
+A student in a green shirt is writing in a notebook.,A person at the movies,2,2.0,1,5.0,8.0
+"A woman in skirt, torn stockings and combat boots and a man in aviators and batman tank top walk down a city street.",The man and woman are going to a movie in the city.,1,1.0,1,1.0,1.0
+"A woman in skirt, torn stockings and combat boots and a man in aviators and batman tank top walk down a city street.",The man and woman are going to a movie in the city.,1,1.0,1,3.0,1.0
+"A woman in skirt, torn stockings and combat boots and a man in aviators and batman tank top walk down a city street.",The man and woman are going to a movie in the city.,1,1.0,1,5.0,1.0
+"A woman in skirt, torn stockings and combat boots and a man in aviators and batman tank top walk down a city street.",The man and woman are going to a movie in the city.,1,1.0,1,1.0,4.0
+"A woman in skirt, torn stockings and combat boots and a man in aviators and batman tank top walk down a city street.",The man and woman are going to a movie in the city.,1,1.0,1,3.0,4.0
+"A woman in skirt, torn stockings and combat boots and a man in aviators and batman tank top walk down a city street.",The man and woman are going to a movie in the city.,1,1.0,1,5.0,4.0
+"A woman in skirt, torn stockings and combat boots and a man in aviators and batman tank top walk down a city street.",The man and woman are going to a movie in the city.,1,1.0,1,1.0,8.0
+"A woman in skirt, torn stockings and combat boots and a man in aviators and batman tank top walk down a city street.",The man and woman are going to a movie in the city.,1,1.0,1,3.0,8.0
+"A woman in skirt, torn stockings and combat boots and a man in aviators and batman tank top walk down a city street.",The man and woman are going to a movie in the city.,1,1.0,1,5.0,8.0
+A man wielding an electric razor is gleefully shaving away another man's hair.,There is only one person present.,2,2.0,1,1.0,1.0
+A man wielding an electric razor is gleefully shaving away another man's hair.,There is only one person present.,2,2.0,1,3.0,1.0
+A man wielding an electric razor is gleefully shaving away another man's hair.,There is only one person present.,2,2.0,1,5.0,1.0
+A man wielding an electric razor is gleefully shaving away another man's hair.,There is only one person present.,2,2.0,1,1.0,4.0
+A man wielding an electric razor is gleefully shaving away another man's hair.,There is only one person present.,2,2.0,1,3.0,4.0
+A man wielding an electric razor is gleefully shaving away another man's hair.,There is only one person present.,2,2.0,1,5.0,4.0
+A man wielding an electric razor is gleefully shaving away another man's hair.,There is only one person present.,2,2.0,1,1.0,8.0
+A man wielding an electric razor is gleefully shaving away another man's hair.,There is only one person present.,2,2.0,1,3.0,8.0
+A man wielding an electric razor is gleefully shaving away another man's hair.,There is only one person present.,2,2.0,1,5.0,8.0
+"A man on a bike, with the sun beating down in the background, just launched off of a dirt ramp and is coming back down.",An bike rider jumping ramps on a sunny day.,0,0.0,1,1.0,1.0
+"A man on a bike, with the sun beating down in the background, just launched off of a dirt ramp and is coming back down.",An bike rider jumping ramps on a sunny day.,0,0.0,1,3.0,1.0
+"A man on a bike, with the sun beating down in the background, just launched off of a dirt ramp and is coming back down.",An bike rider jumping ramps on a sunny day.,0,0.0,1,5.0,1.0
+"A man on a bike, with the sun beating down in the background, just launched off of a dirt ramp and is coming back down.",An bike rider jumping ramps on a sunny day.,0,0.0,1,1.0,4.0
+"A man on a bike, with the sun beating down in the background, just launched off of a dirt ramp and is coming back down.",An bike rider jumping ramps on a sunny day.,0,0.0,1,3.0,4.0
+"A man on a bike, with the sun beating down in the background, just launched off of a dirt ramp and is coming back down.",An bike rider jumping ramps on a sunny day.,0,0.0,1,5.0,4.0
+"A man on a bike, with the sun beating down in the background, just launched off of a dirt ramp and is coming back down.",An bike rider jumping ramps on a sunny day.,0,0.0,1,1.0,8.0
+"A man on a bike, with the sun beating down in the background, just launched off of a dirt ramp and is coming back down.",An bike rider jumping ramps on a sunny day.,0,0.0,1,3.0,8.0
+"A man on a bike, with the sun beating down in the background, just launched off of a dirt ramp and is coming back down.",An bike rider jumping ramps on a sunny day.,0,0.0,1,5.0,8.0
+Young Asian male child either smoking something or its an instrument.,A child is taking a nap.,2,2.0,1,1.0,1.0
+Young Asian male child either smoking something or its an instrument.,A child is taking a nap.,2,2.0,1,3.0,1.0
+Young Asian male child either smoking something or its an instrument.,A child is taking a nap.,2,2.0,1,5.0,1.0
+Young Asian male child either smoking something or its an instrument.,A child is taking a nap.,2,2.0,1,1.0,4.0
+Young Asian male child either smoking something or its an instrument.,A child is taking a nap.,2,2.0,1,3.0,4.0
+Young Asian male child either smoking something or its an instrument.,A child is taking a nap.,2,2.0,1,5.0,4.0
+Young Asian male child either smoking something or its an instrument.,A child is taking a nap.,2,2.0,1,1.0,8.0
+Young Asian male child either smoking something or its an instrument.,A child is taking a nap.,2,2.0,1,3.0,8.0
+Young Asian male child either smoking something or its an instrument.,A child is taking a nap.,2,2.0,1,5.0,8.0
+"A woman in a bright pink jacket and jeans, with two young children, also in jackets, is on the deck of a yacht using a telescope to look out to sea.",A woman has a bright light pink jacket.,1,0.0,0,1.0,1.0
+"A woman in a bright pink jacket and jeans, with two young children, also in jackets, is on the deck of a yacht using a telescope to look out to sea.",A woman has a bright light pink jacket.,1,0.0,0,3.0,1.0
+"A woman in a bright pink jacket and jeans, with two young children, also in jackets, is on the deck of a yacht using a telescope to look out to sea.",A woman has a bright light pink jacket.,1,0.0,0,5.0,1.0
+"A woman in a bright pink jacket and jeans, with two young children, also in jackets, is on the deck of a yacht using a telescope to look out to sea.",A woman has a bright light pink jacket.,1,0.0,0,1.0,4.0
+"A woman in a bright pink jacket and jeans, with two young children, also in jackets, is on the deck of a yacht using a telescope to look out to sea.",A woman has a bright light pink jacket.,1,1.0,1,3.0,4.0
+"A woman in a bright pink jacket and jeans, with two young children, also in jackets, is on the deck of a yacht using a telescope to look out to sea.",A woman has a bright light pink jacket.,1,0.0,0,5.0,4.0
+"A woman in a bright pink jacket and jeans, with two young children, also in jackets, is on the deck of a yacht using a telescope to look out to sea.",A woman has a bright light pink jacket.,1,1.0,1,1.0,8.0
+"A woman in a bright pink jacket and jeans, with two young children, also in jackets, is on the deck of a yacht using a telescope to look out to sea.",A woman has a bright light pink jacket.,1,1.0,1,3.0,8.0
+"A woman in a bright pink jacket and jeans, with two young children, also in jackets, is on the deck of a yacht using a telescope to look out to sea.",A woman has a bright light pink jacket.,1,0.0,0,5.0,8.0
+The man is taking a picture of the beach.,the man is outdoors,0,1.0,0,1.0,1.0
+The man is taking a picture of the beach.,the man is outdoors,0,1.0,0,3.0,1.0
+The man is taking a picture of the beach.,the man is outdoors,0,1.0,0,5.0,1.0
+The man is taking a picture of the beach.,the man is outdoors,0,0.0,1,1.0,4.0
+The man is taking a picture of the beach.,the man is outdoors,0,1.0,0,3.0,4.0
+The man is taking a picture of the beach.,the man is outdoors,0,1.0,0,5.0,4.0
+The man is taking a picture of the beach.,the man is outdoors,0,0.0,1,1.0,8.0
+The man is taking a picture of the beach.,the man is outdoors,0,1.0,0,3.0,8.0
+The man is taking a picture of the beach.,the man is outdoors,0,0.0,1,5.0,8.0
+a woman with brown hair sitting on a bench outside a cafe.,Woman waiting for a friend at a cafe.,1,1.0,1,1.0,1.0
+a woman with brown hair sitting on a bench outside a cafe.,Woman waiting for a friend at a cafe.,1,1.0,1,3.0,1.0
+a woman with brown hair sitting on a bench outside a cafe.,Woman waiting for a friend at a cafe.,1,1.0,1,5.0,1.0
+a woman with brown hair sitting on a bench outside a cafe.,Woman waiting for a friend at a cafe.,1,1.0,1,1.0,4.0
+a woman with brown hair sitting on a bench outside a cafe.,Woman waiting for a friend at a cafe.,1,1.0,1,3.0,4.0
+a woman with brown hair sitting on a bench outside a cafe.,Woman waiting for a friend at a cafe.,1,1.0,1,5.0,4.0
+a woman with brown hair sitting on a bench outside a cafe.,Woman waiting for a friend at a cafe.,1,1.0,1,1.0,8.0
+a woman with brown hair sitting on a bench outside a cafe.,Woman waiting for a friend at a cafe.,1,1.0,1,3.0,8.0
+a woman with brown hair sitting on a bench outside a cafe.,Woman waiting for a friend at a cafe.,1,1.0,1,5.0,8.0
+"Three people sitting on a table, one woman is speaking, and people are listening to them.",There are three women sitting on a table.,1,2.0,0,1.0,1.0
+"Three people sitting on a table, one woman is speaking, and people are listening to them.",There are three women sitting on a table.,1,2.0,0,3.0,1.0
+"Three people sitting on a table, one woman is speaking, and people are listening to them.",There are three women sitting on a table.,1,2.0,0,5.0,1.0
+"Three people sitting on a table, one woman is speaking, and people are listening to them.",There are three women sitting on a table.,1,2.0,0,1.0,4.0
+"Three people sitting on a table, one woman is speaking, and people are listening to them.",There are three women sitting on a table.,1,2.0,0,3.0,4.0
+"Three people sitting on a table, one woman is speaking, and people are listening to them.",There are three women sitting on a table.,1,2.0,0,5.0,4.0
+"Three people sitting on a table, one woman is speaking, and people are listening to them.",There are three women sitting on a table.,1,2.0,0,1.0,8.0
+"Three people sitting on a table, one woman is speaking, and people are listening to them.",There are three women sitting on a table.,1,2.0,0,3.0,8.0
+"Three people sitting on a table, one woman is speaking, and people are listening to them.",There are three women sitting on a table.,1,2.0,0,5.0,8.0
+A man walks past an arch in an old gothic style building.,The man admires the craftsmanship,1,1.0,1,1.0,1.0
+A man walks past an arch in an old gothic style building.,The man admires the craftsmanship,1,1.0,1,3.0,1.0
+A man walks past an arch in an old gothic style building.,The man admires the craftsmanship,1,1.0,1,5.0,1.0
+A man walks past an arch in an old gothic style building.,The man admires the craftsmanship,1,1.0,1,1.0,4.0
+A man walks past an arch in an old gothic style building.,The man admires the craftsmanship,1,1.0,1,3.0,4.0
+A man walks past an arch in an old gothic style building.,The man admires the craftsmanship,1,1.0,1,5.0,4.0
+A man walks past an arch in an old gothic style building.,The man admires the craftsmanship,1,1.0,1,1.0,8.0
+A man walks past an arch in an old gothic style building.,The man admires the craftsmanship,1,1.0,1,3.0,8.0
+A man walks past an arch in an old gothic style building.,The man admires the craftsmanship,1,1.0,1,5.0,8.0
+A man in a white shirt and baseball hat is pushing a cart carrying several bags on a street.,A man is walking outside.,0,1.0,0,1.0,1.0
+A man in a white shirt and baseball hat is pushing a cart carrying several bags on a street.,A man is walking outside.,0,1.0,0,3.0,1.0
+A man in a white shirt and baseball hat is pushing a cart carrying several bags on a street.,A man is walking outside.,0,1.0,0,5.0,1.0
+A man in a white shirt and baseball hat is pushing a cart carrying several bags on a street.,A man is walking outside.,0,0.0,1,1.0,4.0
+A man in a white shirt and baseball hat is pushing a cart carrying several bags on a street.,A man is walking outside.,0,1.0,0,3.0,4.0
+A man in a white shirt and baseball hat is pushing a cart carrying several bags on a street.,A man is walking outside.,0,1.0,0,5.0,4.0
+A man in a white shirt and baseball hat is pushing a cart carrying several bags on a street.,A man is walking outside.,0,1.0,0,1.0,8.0
+A man in a white shirt and baseball hat is pushing a cart carrying several bags on a street.,A man is walking outside.,0,0.0,1,3.0,8.0
+A man in a white shirt and baseball hat is pushing a cart carrying several bags on a street.,A man is walking outside.,0,1.0,0,5.0,8.0
+"The festivities of the Latin celebration has brought many visitors and enthusiastic, colorful, performers to the city.",Many visitors have fun at the Latin celebration.,1,0.0,0,1.0,1.0
+"The festivities of the Latin celebration has brought many visitors and enthusiastic, colorful, performers to the city.",Many visitors have fun at the Latin celebration.,1,1.0,1,3.0,1.0
+"The festivities of the Latin celebration has brought many visitors and enthusiastic, colorful, performers to the city.",Many visitors have fun at the Latin celebration.,1,1.0,1,5.0,1.0
+"The festivities of the Latin celebration has brought many visitors and enthusiastic, colorful, performers to the city.",Many visitors have fun at the Latin celebration.,1,0.0,0,1.0,4.0
+"The festivities of the Latin celebration has brought many visitors and enthusiastic, colorful, performers to the city.",Many visitors have fun at the Latin celebration.,1,1.0,1,3.0,4.0
+"The festivities of the Latin celebration has brought many visitors and enthusiastic, colorful, performers to the city.",Many visitors have fun at the Latin celebration.,1,0.0,0,5.0,4.0
+"The festivities of the Latin celebration has brought many visitors and enthusiastic, colorful, performers to the city.",Many visitors have fun at the Latin celebration.,1,0.0,0,1.0,8.0
+"The festivities of the Latin celebration has brought many visitors and enthusiastic, colorful, performers to the city.",Many visitors have fun at the Latin celebration.,1,0.0,0,3.0,8.0
+"The festivities of the Latin celebration has brought many visitors and enthusiastic, colorful, performers to the city.",Many visitors have fun at the Latin celebration.,1,0.0,0,5.0,8.0
+Construction worker standing atop an unfinished building.,The construction worker is standing.,0,0.0,1,1.0,1.0
+Construction worker standing atop an unfinished building.,The construction worker is standing.,0,0.0,1,3.0,1.0
+Construction worker standing atop an unfinished building.,The construction worker is standing.,0,0.0,1,5.0,1.0
+Construction worker standing atop an unfinished building.,The construction worker is standing.,0,0.0,1,1.0,4.0
+Construction worker standing atop an unfinished building.,The construction worker is standing.,0,0.0,1,3.0,4.0
+Construction worker standing atop an unfinished building.,The construction worker is standing.,0,0.0,1,5.0,4.0
+Construction worker standing atop an unfinished building.,The construction worker is standing.,0,0.0,1,1.0,8.0
+Construction worker standing atop an unfinished building.,The construction worker is standing.,0,0.0,1,3.0,8.0
+Construction worker standing atop an unfinished building.,The construction worker is standing.,0,0.0,1,5.0,8.0
+A topless man straps surfboards on top of his blue car.,A man secures surfboards on his car.,0,0.0,1,1.0,1.0
+A topless man straps surfboards on top of his blue car.,A man secures surfboards on his car.,0,0.0,1,3.0,1.0
+A topless man straps surfboards on top of his blue car.,A man secures surfboards on his car.,0,0.0,1,5.0,1.0
+A topless man straps surfboards on top of his blue car.,A man secures surfboards on his car.,0,0.0,1,1.0,4.0
+A topless man straps surfboards on top of his blue car.,A man secures surfboards on his car.,0,0.0,1,3.0,4.0
+A topless man straps surfboards on top of his blue car.,A man secures surfboards on his car.,0,0.0,1,5.0,4.0
+A topless man straps surfboards on top of his blue car.,A man secures surfboards on his car.,0,0.0,1,1.0,8.0
+A topless man straps surfboards on top of his blue car.,A man secures surfboards on his car.,0,0.0,1,3.0,8.0
+A topless man straps surfboards on top of his blue car.,A man secures surfboards on his car.,0,0.0,1,5.0,8.0
+A beautiful bride walking on a sidewalk with her new husband.,A couple walks outdoors together.,0,0.0,1,1.0,1.0
+A beautiful bride walking on a sidewalk with her new husband.,A couple walks outdoors together.,0,1.0,0,3.0,1.0
+A beautiful bride walking on a sidewalk with her new husband.,A couple walks outdoors together.,0,0.0,1,5.0,1.0
+A beautiful bride walking on a sidewalk with her new husband.,A couple walks outdoors together.,0,0.0,1,1.0,4.0
+A beautiful bride walking on a sidewalk with her new husband.,A couple walks outdoors together.,0,0.0,1,3.0,4.0
+A beautiful bride walking on a sidewalk with her new husband.,A couple walks outdoors together.,0,0.0,1,5.0,4.0
+A beautiful bride walking on a sidewalk with her new husband.,A couple walks outdoors together.,0,0.0,1,1.0,8.0
+A beautiful bride walking on a sidewalk with her new husband.,A couple walks outdoors together.,0,0.0,1,3.0,8.0
+A beautiful bride walking on a sidewalk with her new husband.,A couple walks outdoors together.,0,0.0,1,5.0,8.0
+Two males and one female playing in a fountain of water.,The men and woman are splashing each other in the fountain.,1,1.0,1,1.0,1.0
+Two males and one female playing in a fountain of water.,The men and woman are splashing each other in the fountain.,1,1.0,1,3.0,1.0
+Two males and one female playing in a fountain of water.,The men and woman are splashing each other in the fountain.,1,1.0,1,5.0,1.0
+Two males and one female playing in a fountain of water.,The men and woman are splashing each other in the fountain.,1,1.0,1,1.0,4.0
+Two males and one female playing in a fountain of water.,The men and woman are splashing each other in the fountain.,1,0.0,0,3.0,4.0
+Two males and one female playing in a fountain of water.,The men and woman are splashing each other in the fountain.,1,0.0,0,5.0,4.0
+Two males and one female playing in a fountain of water.,The men and woman are splashing each other in the fountain.,1,0.0,0,1.0,8.0
+Two males and one female playing in a fountain of water.,The men and woman are splashing each other in the fountain.,1,0.0,0,3.0,8.0
+Two males and one female playing in a fountain of water.,The men and woman are splashing each other in the fountain.,1,0.0,0,5.0,8.0
+"Cars and people are outside of ""Hotel Carmel.""",Automobiles and humans are outside the hotel.,0,0.0,1,1.0,1.0
+"Cars and people are outside of ""Hotel Carmel.""",Automobiles and humans are outside the hotel.,0,0.0,1,3.0,1.0
+"Cars and people are outside of ""Hotel Carmel.""",Automobiles and humans are outside the hotel.,0,0.0,1,5.0,1.0
+"Cars and people are outside of ""Hotel Carmel.""",Automobiles and humans are outside the hotel.,0,0.0,1,1.0,4.0
+"Cars and people are outside of ""Hotel Carmel.""",Automobiles and humans are outside the hotel.,0,0.0,1,3.0,4.0
+"Cars and people are outside of ""Hotel Carmel.""",Automobiles and humans are outside the hotel.,0,0.0,1,5.0,4.0
+"Cars and people are outside of ""Hotel Carmel.""",Automobiles and humans are outside the hotel.,0,0.0,1,1.0,8.0
+"Cars and people are outside of ""Hotel Carmel.""",Automobiles and humans are outside the hotel.,0,0.0,1,3.0,8.0
+"Cars and people are outside of ""Hotel Carmel.""",Automobiles and humans are outside the hotel.,0,0.0,1,5.0,8.0
+"Four men and three women, all in their beach attire, hang around a small cliff by the ocean as one man is about to dive into the water.",People in beach attire,0,0.0,1,1.0,1.0
+"Four men and three women, all in their beach attire, hang around a small cliff by the ocean as one man is about to dive into the water.",People in beach attire,0,0.0,1,3.0,1.0
+"Four men and three women, all in their beach attire, hang around a small cliff by the ocean as one man is about to dive into the water.",People in beach attire,0,0.0,1,5.0,1.0
+"Four men and three women, all in their beach attire, hang around a small cliff by the ocean as one man is about to dive into the water.",People in beach attire,0,0.0,1,1.0,4.0
+"Four men and three women, all in their beach attire, hang around a small cliff by the ocean as one man is about to dive into the water.",People in beach attire,0,0.0,1,3.0,4.0
+"Four men and three women, all in their beach attire, hang around a small cliff by the ocean as one man is about to dive into the water.",People in beach attire,0,0.0,1,5.0,4.0
+"Four men and three women, all in their beach attire, hang around a small cliff by the ocean as one man is about to dive into the water.",People in beach attire,0,0.0,1,1.0,8.0
+"Four men and three women, all in their beach attire, hang around a small cliff by the ocean as one man is about to dive into the water.",People in beach attire,0,0.0,1,3.0,8.0
+"Four men and three women, all in their beach attire, hang around a small cliff by the ocean as one man is about to dive into the water.",People in beach attire,0,0.0,1,5.0,8.0
+A road worker is holding a stop sign to direct traffic.,A road worker is holding a shotgun to direct traffic.,2,2.0,1,1.0,1.0
+A road worker is holding a stop sign to direct traffic.,A road worker is holding a shotgun to direct traffic.,2,2.0,1,3.0,1.0
+A road worker is holding a stop sign to direct traffic.,A road worker is holding a shotgun to direct traffic.,2,2.0,1,5.0,1.0
+A road worker is holding a stop sign to direct traffic.,A road worker is holding a shotgun to direct traffic.,2,2.0,1,1.0,4.0
+A road worker is holding a stop sign to direct traffic.,A road worker is holding a shotgun to direct traffic.,2,2.0,1,3.0,4.0
+A road worker is holding a stop sign to direct traffic.,A road worker is holding a shotgun to direct traffic.,2,2.0,1,5.0,4.0
+A road worker is holding a stop sign to direct traffic.,A road worker is holding a shotgun to direct traffic.,2,2.0,1,1.0,8.0
+A road worker is holding a stop sign to direct traffic.,A road worker is holding a shotgun to direct traffic.,2,2.0,1,3.0,8.0
+A road worker is holding a stop sign to direct traffic.,A road worker is holding a shotgun to direct traffic.,2,2.0,1,5.0,8.0
+Three children in a black dog kennel.,The kids are being punished.,1,2.0,0,1.0,1.0
+Three children in a black dog kennel.,The kids are being punished.,1,1.0,1,3.0,1.0
+Three children in a black dog kennel.,The kids are being punished.,1,2.0,0,5.0,1.0
+Three children in a black dog kennel.,The kids are being punished.,1,2.0,0,1.0,4.0
+Three children in a black dog kennel.,The kids are being punished.,1,2.0,0,3.0,4.0
+Three children in a black dog kennel.,The kids are being punished.,1,2.0,0,5.0,4.0
+Three children in a black dog kennel.,The kids are being punished.,1,1.0,1,1.0,8.0
+Three children in a black dog kennel.,The kids are being punished.,1,2.0,0,3.0,8.0
+Three children in a black dog kennel.,The kids are being punished.,1,2.0,0,5.0,8.0

@@ -66,7 +66,6 @@ def get_premise_individual_class(hypothesis, premise, label, m_examples):
         prompt_sys=sys_prompt,
         prompt_user=testing_rel,
         model="gpt-4o-mini",
-        # model = "gpt-3.5-turbo-0125",
         temp=0.7,
     )
 
