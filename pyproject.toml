@@ -22,6 +22,8 @@ matplotlib = "^3.9.3"
 bokeh = ">3.1.0"
 joblib = "^1.4.2"
 scipy = "^1.14.1"
+ipympl = "^0.9.4"
+seaborn = "^0.13.2"
 
 
 [build-system]
